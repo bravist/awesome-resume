@@ -1,139 +1,185 @@
 <html>
-  <head>
+
+<head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
     <!-- <link rel="stylesheet" type="text/css" href="css/fontawesome-all.min.css"/> -->
     <link rel="stylesheet" href="css/fontawesome-all.min.css">
     <link rel="stylesheet" href="css/base.css">
-  </head>
-  <body>
+</head>
+
+<body>
     <!-- 
         整个文档的Div容器
     -->
     <div id="resume-framework">
-      <!-- 
+        <!-- 
           base-info指基础信息，包括头像，姓名，邮箱，电话，链接等 
       -->
-      <div id="base-info-wrapper">
-        <!-- 可以通过调整base.css中的#base-info的width来使顶部居中，例如60% -->
-        <div id="base-info">
-          <!-- 头像 -->
-          <img id="avatar" alt="avatar" src="imgs/avatar.jpg"/>
-          <!-- 其他基础信息 -->
-          <div id="base-info-span">
-            <b id="name">程会勇</b>
-            <hr>
-            <span>
-              <!-- 可以从font-awesome网站(https://fontawesome.com/icons)中搜索所需图标，
+        <div id="base-info-wrapper">
+            <!-- 可以通过调整base.css中的#base-info的width来使顶部居中，例如60% -->
+            <div id="base-info">
+                <!-- 头像 -->
+                <img id="avatar" alt="avatar" src="imgs/avatar.jpg" />
+                <!-- 其他基础信息 -->
+                <div id="base-info-span">
+                    <b id="name">程会勇</b>
+                    <hr>
+                    <span>
+                        <!-- 可以从font-awesome网站(https://fontawesome.com/icons)中搜索所需图标，
               直接替换<i>标签class内内容即可 -->
-              <h5>
-                  <i class="fas fa-envelope"></i> chenghuiyong1987@gmail.com| 
-                  <i class="fas fa-phone"></i> 153-9043-8190 | 政治面貌：群众</h5>
-              <h5>
-                  <i class="fab fa-github"></i> github.com/bravist | 求职意向: PHP高级开发工程师 / 架构师</h5>
-            </span>
-          </div> <!-- end base-info-span -->
-        </div> <!-- end base-info -->
-      </div> <!-- base-info-wrapper -->
-      <div style="clear: both;"></div>
-      <!-- 
+                        <h5>
+                            <i class="fas fa-envelope"></i> chenghuiyong1987@gmail.com|
+                            <i class="fas fa-phone"></i> 153-9043-8190 | 政治面貌：群众</h5>
+                        <h5>
+                            <i class="fab fa-github"></i> github.com/bravist | 求职意向: PHP高级开发工程师</h5>
+                    </span>
+                </div> <!-- end base-info-span -->
+            </div> <!-- end base-info -->
+        </div> <!-- base-info-wrapper -->
+        <div style="clear: both;"></div>
+        <!-- 
           个人简介部分 
       -->
-      <div id="summary">
-        <div class="banner-div">
-          <span class="banner-span">
-              <i class="white-icon fas fa-user"></i>&nbsp;个人简介
-          </span>
-        </div> <!-- end banner-div -->
-        <!-- 个人简介可替换部分 -->
-        <p>熟练掌握 PHP 语言 Laravel 框架，Yii 框架与常用工具，有丰富的 LNMP 开发与良好的 Web 网络编程经验，参与多个互联网产品架构设计与系统核心部分代码编写、重构，能进行技术攻关，突破关键技术瓶颈，拥抱新技术，有很强的学习能力。</p>
-      </div> <!-- end summary -->
-      <!-- 
+        <div id="summary">
+            <div class="banner-div">
+                <span class="banner-span">
+                    <i class="white-icon fas fa-user"></i>&nbsp;个人简介
+                </span>
+            </div> <!-- end banner-div -->
+            <!-- 个人简介可替换部分 -->
+            <p>熟练掌握PHP语言Laravel/ThinkPHP/Yii等框架与常用工具，有丰富的LNMP开发与良好的Web网络编程经验，参与多个互联网产品架构设计与系统核心部分代码编写、重构，能进行技术攻关，突破关键技术瓶颈，拥抱新技术，有很强的学习能力。</p>
+        </div> <!-- end summary -->
+        <!-- 
           技能列表部分
       -->
-      <div id="skills">
-        <div class="banner-div">
-          <span class="banner-span">
-            <i class="white-icon fas fa-pencil-alt"></i>&nbsp;技能列表
-          </span>
+        <div id="skills">
+            <div class="banner-div">
+                <span class="banner-span">
+                    <i class="white-icon fas fa-pencil-alt"></i>&nbsp;技能列表
+                </span>
+            </div> <!-- end skills -->
+            <!-- 技能列表可替换部分 &nbsp;用来控制格式-->
+            <ul>
+                <li>
+                    <b>后端框架:</b> Laravel, ThinkPHP &nbsp;&nbsp;
+                    <b>前端框架:</b> Vue, jQuery
+                </li>
+                <li>
+                    <b>数据库:</b> Redis, MySQL &nbsp;&nbsp;
+                    <b>工具:</b> Docker, Jenkins, Git与多分支协同策略
+                </li>
+                <li>
+                    <b>其他:</b> Liunx, GraphQL, WebSocket &nbsp;&nbsp;
+                    <b>外语:</b> 能流畅阅读英文文档
+                </li>
+            </ul>
         </div> <!-- end skills -->
-        <!-- 技能列表可替换部分 &nbsp;用来控制格式-->
-        <ul>
-            <li>
-              <b>后端框架:</b> Laravel, ThinkPHP, &nbsp;&nbsp;
-              <b>前端框架:</b> Vue, jQuery
-            </li>
-            <li>
-              <b>数据库:</b> Redis, MySQL &nbsp;&nbsp;
-              <b>工具:</b> Docker, Jenkins, Git
-            </li>
-            <li>
-              <b>其他:</b> GraphQL, WebSocket  &nbsp;&nbsp;
-              <b>外语:</b> Rss Hacker News, 能流畅阅读英文文档
-            </li>
-        </ul>
-      </div> <!-- end skills -->
-      <!-- 
+        <!-- 
           工作经历部分
       -->
-      <div id="jobs">
-        <div class="banner-div">
-          <span class="banner-span">
-            <i class="white-icon fas fa-briefcase"></i>&nbsp;工作经历
-          </span>
-        </div>
-        <!-- 第一份工作的介绍 -->
-        <b>四川大智若禺电子商务有限公司（二线纸巾制造商领头初创）</b>
-        <p>2018年9月-2019年1月 | 高级 PHP 工程师</p>
-        <ul>
-          <li>利用<b>组件化思想</b>拆分业务子系统和功能组件，提高重用性，实现<b>SOA</b>架构。</li>
-          <li>负责开发GraphQL/REST API，采用Composer私有化Laravel Model/Auth等组件，改进代码质量，减少20%的开发成本。</li>
-          <li>负责使用消息队列构建注册送金币等产品需求，降低耦合、提高系统并发量和可用性。</li>
-          <li>负责系统技术文档的编写以及维护，合并代码并review，协助持续集成与自动化部署，与团队共同学习成长。</li>
-        </ul>
-        <!-- 第一个项目的介绍，多个项目可以复制project-span区块-->
-        <span class="project-span">
-          <b>Payway支付网关系统</b>
-          <ul>
-            <li>基于<b>Laravel</b>采用工厂方法模式对支付功能重构，独立测试部署，提升系统水平扩展性。 </li>
-            <li>主导设计开发<b>集合网关、下单、支付、日志、异常处理、队列</b>等 10 个功能。</li>
-          </ul>
-        </span> <!-- end project-span -->
-        <!-- 第一份工作结束 -->
-        <!-- 第二份工作开始 -->
-        <br>
-        <b>未来科技有限公司</b>
-        <p>2012年6月-2014年6月 | Python工程师</p>
-        <ul>
-          <li>使用 Python 爬虫帮助公司进行电商数据的<b>数据采集，文本分析与文本标注。</b>并将就分析结果与开发人员讨论产品方向。
-          <li>带领 3人 团队完成后端系统的难点分析与架构设计工作，承担核心功能代码编写，开发与维护系统核心模块。使用 Selenium 等工具对产品进行多方面测试，保证代码的可靠，安全。</li>
-          <li>使用 <b>Docker</b> 对项目进行拆分重新架构, 减少业务模块之间的资源耦合, 实现<b>持续集成与自动化部署</b>。</li>
-        </ul>
-        <!-- 第一个项目的介绍，多个项目可以复制project-span区块-->
-        <!-- 第二份工作结束 -->
-      </div> <!-- end jobs -->
-      <!-- 
+        <div id="jobs">
+            <div class="banner-div">
+                <span class="banner-span">
+                    <i class="white-icon fas fa-briefcase"></i>&nbsp;工作经历
+                </span>
+            </div>
+            <!-- 第一份工作的介绍 -->
+            <b>四川大智若禺电子商务有限公司</b>
+            <p>2018年9月-2019年1月 | 高级 PHP 工程师</p>
+            <ul>
+                <li>负责利用组件化思想拆分业务子系统和功能组件，提高重用性，实现SOA架构。</li>
+                <li>负责开发GraphQL/REST API，采用Composer私有化Laravel Model/Auth等组件，改进代码质量，减少20%的开发成本。</li>
+                <li>负责使用消息队列构建注册发邮件等产品需求，降低耦合、提高系统并发量和可用性。</li>
+            </ul>
+            <!-- 第一个项目的介绍，多个项目可以复制project-span区块-->
+            <span class="project-span">
+                <b>Payway支付网关系统</b>
+                <ul>
+                    <li>使用工厂方法模式对支付功能重构，独立测试部署，提升系统水平扩展性。 </li>
+                    <li>主导设计开发多账户配置、下单支付、取消、退款、日志、异常处理、队列等多个功能。</li>
+                </ul>
+            </span> <!-- end project-span -->
+            <!-- 第一份工作结束 -->
+            <!-- 第二份工作开始 -->
+            <br />
+            <b>重庆车云金服科技有限公司</b>
+            <p>2014年11月-2018年9月 | PHP项目组长</p>
+            <ul>
+                <li>作为组长带领10人团队完成3个产品的架构与设计工作，负责工作任务细化、分配，保证项目按时上线。</li>
+                <li>负责设计开发业务REST API / 开放API / 第三方支付 / APP消息推送与IM / 在线实时语音通话等功能，改进消息推送策略提高200%推送速度，部署SLB、Redis缓存、LOG日志系统等提高系统稳定性。</li>
+                <li>使用Docker改造项目，统一开发环境，基于Gitlab实现持续集成与自动化部署，提高团队开发效率和产品版本迭代 。</li>
+                <li>负责系统技术文档的编写以及维护，合并代码并Code Review，与团队共同学习成长。</li>
+            </ul>
+            <!-- 第一个项目的介绍，多个项目可以复制project-span区块-->
+            <span class="project-span">
+                <b>Gitlab on Docker 实现CI/CD</b>
+                <ul>
+                    <li>通过定义安装框架组件、环境参数、数据库版本、计划任务、异步队列等构建任务，实现代码快速部署，提升80%的上线速度。</li>
+                    <li>基于Docker Compose编排镜像，实现数据与应用分离，并贡献项目心得并开源。</li>
+                </ul>
+            </span> <!-- end project-span -->
+            <!-- 第一个项目的介绍，多个项目可以复制project-span区块-->
+            <span class="project-span">
+                <b>开放平台建设</b>
+                <ul>
+                    <li>基于Laravel框架将OAuth2.0中授权码、客户端、密码等多种授权模式应用开放平台，实现客户端认证与授权。</li>
+                    <li>抽象独立签名中间件，支持Hash、RSA算法做数据签名，保障数据传输安全。</li>
+                    <li>基于Postman Document，编写一套完整RESTFul API文档，提供文档参考。</li>
+                </ul>
+            </span> <!-- end project-span -->
+            <!-- 第二份工作结束 -->
+            <br />
+            <!-- 第三份工作的介绍 -->
+            <b>成都仕嗒科技有限公司</b>
+            <p>2013年07月-2014年10月 | 中级 PHP 工程师</p>
+            <ul>
+                <li>负责用Symfony1.x框架开发国外CMS系统，学会任务工时预估与Mantis Bug高效协同，提升个人编码水平</li>
+            </ul>
+            <!-- 第三份工作结束 -->
+
+            <br />
+            <!-- 第四份工作的介绍 -->
+            <b>美乐乐家具网</b>
+            <p>2012年06月-2013年07月 | 中级 PHP 工程师</p>
+            <ul>
+                <li>负责通过WebService接口与海尔对接物流仓储单、装车单、发货单等业务，开发ERP部分模块。</li>
+                <li>负责开发货物条码扫码入库程序，开发早期的仓储管理系统。</li>
+            </ul>
+            <!-- 第四份工作结束 -->
+
+            <br />
+            <!-- 第五份工作的介绍 -->
+            <b>成都明熙文化传播有限公司</b>
+            <p>2010年06月-2012年05月 | 初级 PHP 工程师</p>
+            <ul>
+                <li>负责开发早期新闻发布系统部分模块。</li>
+            </ul>
+            <!-- 第五份工作结束 -->
+        </div> <!-- end jobs -->
+        <!-- 
           教育经历部分
       -->
-      <div id="education">
-        <div class="banner-div">
-          <span class="banner-span"><i class="white-icon fas fa-graduation-cap"></i>&nbsp;教育经历</span>
-        </div>
-      <b>成都东软学院 | 计算机科学 | 2007年- 2010年</b>
-      <ul>
-          <li>2009年获得国家励志奖学金</li>
-      <ul>
-      </div> <!-- end education -->
-      <!-- 
+        <div id="education">
+            <div class="banner-div">
+                <span class="banner-span"><i class="white-icon fas fa-graduation-cap"></i>&nbsp;教育经历</span>
+            </div>
+            <b>成都东软学院 | 计算机科学 | 2007年- 2010年</b>
+            <ul>
+                <li>2009年获得国家励志奖学金</li>
+                <ul>
+        </div> <!-- end education -->
+        <!-- 
           志愿者工作部分
       -->
-      <div id="volunteer">
-        <div class="banner-div">
-          <span class="banner-span"><i class="white-icon fas fa-ribbon"></i>&nbsp;志愿工作</span>
-        </div>
-        <ul>
-          <li>Github 上两个开源项目Docker for LNMP & Gitlab on Docker for CI/CD 获得 200+ Star。</li>
-        <ul>
-      </div> <!-- end education -->
+        <div id="volunteer">
+            <div class="banner-div">
+                <span class="banner-span"><i class="white-icon fas fa-ribbon"></i>&nbsp;志愿工作</span>
+            </div>
+            <ul>
+                <li>Github 上两个开源项目Docker for LNMP & Gitlab on Docker for CI/CD 获得 200+ Star。</li>
+                <ul>
+        </div> <!-- end education -->
     </div> <!-- end resume-framework -->
-  </body>
+</body>
+
 </html>
